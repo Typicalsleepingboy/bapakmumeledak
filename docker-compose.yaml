@@ -1,0 +1,21 @@
+services:
+    app:
+        container_name: jkt48-apis
+        image: jkt48/apis:v0.1
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - '6969:6969'
+        restart: unless-stopped
+        tty: true
+        volumes:
+            # - jkt48-backend_jkt48-static:/jkt48/apis/static
+            # - jkt48-backend_jkt48-logs:/jkt48/apis/logs
+            - ./static:/jkt48/apis/static
+            - ./logs:/jkt48/apis/logs
+# volumes:
+#     jkt48-backend_jkt48-static:
+#         external: true
+#     jkt48-backend_jkt48-logs:
+#         external: true

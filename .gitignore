@@ -1,0 +1,40 @@
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+.env
+.env.local
+.env.production
+
+node_modules
+dist
+dist-ssr
+*.local
+
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sentry Config File
+.sentryclirc
+
+.firebase
+
+service-account.json
+service-account-androidPublisher.json
+SubscriptionKey_4X4DAUH7SH.p8
+apple_root.pem
+
+# Ignore everything in the drizzle directory
+drizzle/*
+
+# But don't ignore drizzle/meta/_journal.json
+!drizzle/meta/_journal.json
